@@ -14,25 +14,32 @@ body {
   right: 0;
   bottom: 0;
 }
+section {
+  position: absolute;
+  top: 50%; left: 50%;
+  margin: -275px 0 0 -275px;  
+  width: 550px; height: 550px;
+}
 h1 {
   color: #d8d6c3;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: 35px; 
+  font-size: 2.33em; 
   font-weight: 300;
-  line-height: 35px;
+  line-height: 1.4;
+  margin: 0;
   position: absolute;
-  top: 28%; left: 0;
+  top: 25%; left: 0;
   text-align: center;
   width: 100%;
 }
 h1 span {
   display: block;
-  font-size: 16px;
+  font-size: .5em;
   font-weight: 100;
 }
 .more-info {
   position: absolute;
-  bottom: 28%;
+  bottom: 25%;
   left: 50%;
   margin-left: -75px;
   width: auto!important;
@@ -45,9 +52,6 @@ h1 span {
   background-image: url('../img/earth.svg');
   background-repeat: no-repeat;
   background-size: 100%;
-  position: absolute;
-  top: 50%; left: 50%;
-  margin: -275px 0 0 -275px;  
   width: 550px; height: 550px;
 }
 .earth-shadow {
@@ -55,7 +59,7 @@ h1 span {
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
-  top: 301px; left: 48%;
+  top: 41%; left: 46%;
   width: 65px; height: 100px;
 }
 
@@ -151,12 +155,12 @@ footer {
   Modal Content
 ------------------------------------------------------*/
 .details {
-  margin: 40px 0;
+  margin: 2.5em 0;
 }
 .details li {
   border-right: 1px solid #EEE;
   display: inline-block;
-  padding: 0 25px;
+  padding: 0 1em;
   list-style-type: none;
 }
 .details li:first-child {
@@ -170,10 +174,14 @@ footer {
   display: block;
   font-size: 11px;
   text-transform: uppercase;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .details .num {
   line-height: 1;
-  font-size: 48px;
+  font-size: 2.2em;
   font-weight: 700;
 }
 
@@ -273,5 +281,47 @@ footer {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 10pt;
+  }
+
+  /* Space */
+  section, .orbit {
+    margin: -155px 0 0 -155px;
+    width: 310px;
+    height: 310px;
+  }
+  h1 {
+    top: 12%;
+  }
+  .more-info {
+    bottom: 15%;
+  }
+  .earth {
+    width: 310px;
+    height: 310px; 
+  }
+  .earth-shadow {
+    top: 34%;
+    left: 38%;
+  }
+  .arsat-1 {
+    left: -40px;
+    height: 32px;
+    width: 80px;
+  }
+
+  /* Modal */
+  .modal {
+    left: 0;
+    max-width: 100%;
+  }
+  .details li {
+    width: 32%;
   }
 }
