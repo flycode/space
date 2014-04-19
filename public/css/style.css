@@ -185,6 +185,7 @@ footer {
 
 /* Links */
 .external-links {
+  display: none;
   margin: 0;
 }
 .external-links a {
@@ -200,6 +201,9 @@ footer {
 .external-links .icon {
   font-size: 13px;
   margin-left: 2px;
+}
+.modal-show .external-links {
+  display: block;
 }
 
 /*
