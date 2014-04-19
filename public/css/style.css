@@ -97,7 +97,7 @@ h1 span {
   Footer
 ------------------------------------------------------*/
 footer {
-  margin: 0 40px;
+  margin: 0 2.5em;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -284,6 +284,28 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  .details {
+    margin: 1.5em 0;
+  }
+  .details li {
+    border: none;
+    border-bottom: 1px solid #EEE;
+    display: block;
+    padding: .5em 0;
+  }
+  .details .num {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 940px) {
+  /* Modal */
+  .modal {
+    left: 0;
+    max-width: 100%;
+  }
+}
 
 @media (max-width: 480px) {
   body {
@@ -307,31 +329,13 @@ footer {
     height: 310px; 
   }
   .earth-shadow {
-    top: 34%;
-    left: 38%;
+    width: 36px;
+    height: 80px;
   }
   .arsat-1 {
     left: -40px;
     height: 32px;
     width: 80px;
-  }
-
-  /* Modal */
-  .modal {
-    left: 0;
-    max-width: 100%;
-  }
-  .details {
-    margin: 1.5em 0;
-  }
-  .details li {
-    border: none;
-    border-bottom: 1px solid #EEE;
-    display: block;
-    padding: .5em 0;
-  }
-  .details .num {
-    font-size: 1.8em;
   }
   .video-show {
     width: 300px;
