@@ -1,0 +1,25 @@
+{
+  "name": "Space satellite",
+  "version": "1.0",
+  "description": "Satelites argentinos.",
+  "author": "Flycode",
+  "contributors": [
+    {
+      "name": "Nicolas Brizuela",
+      "email": "nicobrizuela@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flycode/space.git"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.6",
+    "gulp-minify-css": "~0.2.0",
+    "gulp-less": "~1.2.1",
+    "gulp-concat": "~2.1.7",
+    "gulp-uglify": "~0.2.0",
+    "gulp-header": "~1.0.2"
+  },
+  "license": "MIT"
+}

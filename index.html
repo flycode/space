@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interacción y descripción de los satélites Argentinos.">
+    <meta name="author" content="Flycode">
+
+    <title>Satélites Argentinos</title>
+
+    <!-- External fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,300,500,700' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="src/css/frogui.css" rel="stylesheet">
+    <link href="src/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <main class="my-app">
+      <section>
+        <div class="earth"></div>
+        <div class="earth-shadow"></div>
+      </section>
+      <div class="orbit"><div class="arsat-1"></div></div>
+      <h1>Satélites Argentinos <span>(Internet, Telefonía y TV digital)</span></h1>
+      <button class="modal-trigger btn btn-default btn-secondary more-info" data-modal="info">Información</button>
+
+      <footer>
+        <p class="copy">Hecho con <3 en Argentina por <a href="http://www.nicobrizuela.com" target="_blank"><strong>Flycode</strong></a></p>
+        <ul class="social">
+          <li><a href="https://twitter.com/intent/tweet?text=Animaci%C3%B3n+interactiva+de+Sat%C3%A9lites+Argentinos&url=http%3A%2F%2Fsatelites-arg.herokuapp.com%2F&via=njbrizuela" target="_blank"><i class="icon icon-twitter-circled"></i></a></li>
+          <li><a href=""><i class="icon icon-facebook-circled"></i></i></a></li>
+          <li><a href=""><i class="icon icon-github-circled"></i></a></li>
+        </ul>
+      </footer>
+
+    </main>
+
+    <div class="modal" id="info">
+        <div class="modal-header">
+          <h3>ARSAT-1</h3>
+          <button class="modal-close"><i class="icon icon-cancel"></i></button>
+        </div>
+        <div class="modal-content">
+          <p>Satélite de telecomunicaciones geoestacionario que brindará servicios de Internet, Telefonía y TV digital.</p>
+          <ul class="details">
+            <li>
+              <span class="tit">Posición orbital</span>
+              <strong class="num">72º O</strong>
+            </li>
+            <li>
+              <span class="tit">Distancia de la Tierra (km)</span>
+              <strong class="num">36.000</strong>
+            </li>
+            <li>
+              <span class="tit">Operativo desde</span>
+              <strong class="num">2014</strong>
+            </li>
+          </ul>
+
+          <iframe class="video" width="500" height="315" src="https://www.youtube.com/embed/Gs5hs7hn4As?rel=0" frameborder="0"></iframe>
+
+          <p class="external-links">
+            <a href="http://www.arsat.com.ar/satelites-y-orbitas" target="_blank">Visitar AR-SAT <i class="icon icon-export"></i></a>
+
+            <a href="http://www.invap.com.ar/es/proyectos/satelite-arsat.html" target="_blank">Visitar INVAP <i class="icon icon-export"></i></a>
+          </p>
+        </div>
+      </div>
+    <div class="modal-overlay"></div>
+
+    <!-- Your core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="src/js/frogui.js"></script>
+    <script type="text/javascript">
+      var app = document.querySelector('.my-app');
+      var video = document.querySelector('.video');
+      modal.init(function(){
+        classie.add( app, 'modal-showed' );
+        classie.add( video, 'video-show' );
+      }, function(){
+        classie.remove( app, 'modal-showed' );
+        classie.remove( video, 'video-show' );
+      });
+    </script>
+
+  </body>
+</html>
