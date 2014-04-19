@@ -1,6 +1,9 @@
 /*
   Base
 ------------------------------------------------------*/
+body {
+  overflow: hidden;
+}
 .my-app {
   background-image: url('../img/bg.jpg');
   background-size: cover;
@@ -116,11 +119,11 @@ footer {
 ------------------------------------------------------*/
 .modal {
   position: absolute;
-  left: auto;
+  left: 55%;
   right: 0;
   top: 0;
-  height: 100%;
-  width: 44%;
+  bottom: 0;
+  width: 100%; max-width: 45%;
   border-radius: 0;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -141,7 +144,7 @@ footer {
 .modal-showed {
   -webkit-transition: all 1.25s;
   transition: all 1.25s;
-  right: 43%;
+  right: 45%;
 }
 
 /*
