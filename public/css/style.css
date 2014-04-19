@@ -75,8 +75,8 @@ h1 span {
   background-size: 100%;
   width: 110px; height: 44px;
   position: absolute;
-  right: -58px;
-  top: 45%;
+  left: -58px;
+  top: 50%;
 }
 .arsat-1 span {
   position: absolute;
