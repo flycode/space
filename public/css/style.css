@@ -321,7 +321,20 @@ footer {
     left: 0;
     max-width: 100%;
   }
+  .details {
+    margin: 1.5em 0;
+  }
   .details li {
-    width: 32%;
+    border: none;
+    border-bottom: 1px solid #EEE;
+    display: block;
+    padding: .5em 0;
+  }
+  .details .num {
+    font-size: 1.8em;
+  }
+  .video-show {
+    width: 345px;
+    height: 250px;
   }
 }
